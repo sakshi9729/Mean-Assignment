@@ -32,7 +32,7 @@ var hasName = function (req, res, next) {
 var sayHello = function (req, res, next) {
     res.send('Hello' + req.param('name'));
 };
-app.get('/', hasName, sayHello);
+app.get('/name', hasName, sayHello);
 
 
 app.listen(8000, () => {
